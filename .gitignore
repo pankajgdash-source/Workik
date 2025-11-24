@@ -1,0 +1,49 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+# Rider
+.idea/
+
+# ASP.NET Core
+wwwroot/lib/
+
+# User secrets
+secrets.json
+secrets.*
+
+# Publish directory
+publish/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Logs
+*.log
+
+# Resharper
+_ReSharper*/
+
+# Others
+*.vspscc
+*.vssscc
+
+# DotCover
+.idea/.dotCover
+
+# JetBrains Rider
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
