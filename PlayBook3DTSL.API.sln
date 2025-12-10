@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayBook3DTSL.API", "PlayBook3DTSL.API\PlayBook3DTSL.API.csproj", "{40BF17A3-795F-4F82-8C52-BA6095168D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayBook3DTSL.Utilities", "PlayBook3DTSL.Utilities\PlayBook3DTSL.Utilities.csproj", "{483A1C9C-F759-432D-9D61-8F689B1453C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayBook3DTSL.Model", "PlayBook3DTSL.Model\PlayBook3DTSL.Model.csproj", "{86846AEC-007E-4C8D-BC52-C35941ACCD04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayBook3DTSL.Services", "PlayBook3DTSL.Services\PlayBook3DTSL.Services.csproj", "{B740BABC-1F8E-4F6F-BEA2-B8C08E823C9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayBook3DTSL.Repository", "PlayBook3DTSL.Repository\PlayBook3DTSL.Repository.csproj", "{2F4D0CE0-4BB1-4705-BFE0-81FDDB1160F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayBook3DTSL.Database", "PlayBook3DTSL.Database\PlayBook3DTSL.Database.csproj", "{FB3E9F2D-4F2D-4F9F-9B91-178BF29838F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40BF17A3-795F-4F82-8C52-BA6095168D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40BF17A3-795F-4F82-8C52-BA6095168D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40BF17A3-795F-4F82-8C52-BA6095168D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40BF17A3-795F-4F82-8C52-BA6095168D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{483A1C9C-F759-432D-9D61-8F689B1453C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{483A1C9C-F759-432D-9D61-8F689B1453C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{483A1C9C-F759-432D-9D61-8F689B1453C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{483A1C9C-F759-432D-9D61-8F689B1453C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86846AEC-007E-4C8D-BC52-C35941ACCD04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86846AEC-007E-4C8D-BC52-C35941ACCD04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86846AEC-007E-4C8D-BC52-C35941ACCD04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86846AEC-007E-4C8D-BC52-C35941ACCD04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B740BABC-1F8E-4F6F-BEA2-B8C08E823C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B740BABC-1F8E-4F6F-BEA2-B8C08E823C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B740BABC-1F8E-4F6F-BEA2-B8C08E823C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B740BABC-1F8E-4F6F-BEA2-B8C08E823C9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F4D0CE0-4BB1-4705-BFE0-81FDDB1160F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F4D0CE0-4BB1-4705-BFE0-81FDDB1160F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F4D0CE0-4BB1-4705-BFE0-81FDDB1160F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F4D0CE0-4BB1-4705-BFE0-81FDDB1160F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB3E9F2D-4F2D-4F9F-9B91-178BF29838F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB3E9F2D-4F2D-4F9F-9B91-178BF29838F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB3E9F2D-4F2D-4F9F-9B91-178BF29838F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB3E9F2D-4F2D-4F9F-9B91-178BF29838F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CE32FF4-550E-4BB3-ABDB-07124E76A125}
+	EndGlobalSection
+EndGlobal
