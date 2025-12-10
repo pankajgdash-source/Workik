@@ -3,61 +3,18 @@
 ---
 
 ## Detailed File-wise Review
+| **File / Module**               | **Issues Summary**                                                                                                                                                    | **Priority** | **Recommendations Summary**                                                                                                              |
+| ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| **CaseController.cs**           | - `[Authorize]` commented out<br>- No input validation<br>- Async calls not awaited<br>- Exception details exposed<br>- Commented code present                        | **Critical** | - Re-enable authorization<br>- Add validation attributes<br>- Properly await async<br>- Return generic errors<br>- Remove commented code |
+| **CaseRepository.cs**           | - Very large file (2191+ lines)<br>- Static mutable user context<br>- Mixed concerns<br>- Missing cancellation tokens<br>- Unsafe path handling<br>- Missing XML docs | **Critical** | - Refactor into smaller classes<br>- Remove static state<br>- Add cancellation support<br>- Sanitize paths<br>- Add XML docs             |
+| **AzureStorageService.cs**      | - Empty catch blocks<br>- Improper logging levels<br>- Process disposal missing<br>- Nullable exception access                                                        | **High**     | - Log exceptions properly<br>- Use correct log levels<br>- Dispose processes properly<br>- Use null checks for exceptions                |
+| **Program.cs**                  | - Hardcoded URLs<br>- Overly permissive CORS<br>- Duplicate SignalR & FormOptions config<br>- JWT lifetime validation disabled                                        | **Critical** | - Move URLs to config<br>- Restrict CORS origins<br>- Remove duplicate config<br>- Enable JWT lifetime validation                        |
+| **JwtMiddleware.cs**            | - Logger not injected<br>- Missing null checks on claims                                                                                                              | **High**     | - Inject logger via constructor<br>- Add null checks on claims                                                                           |
+| **AppConfiguration.cs**         | - Manual config file loading<br>- Hardcoded config path<br>- Secrets stored insecurely                                                                                | **High**     | - Use `IOptions<T>` DI pattern<br>- Remove manual loading<br>- Secure secrets via environment or vault                                   |
+| **CloudStorageFactory.cs**      | - Factory returns same implementation<br>- Duplicate factory code                                                                                                     | **Medium**   | - Implement proper factory pattern<br>- Consolidate factory class                                                                        |
+| **PacsServerImage.cs**          | - Static mutable collections<br>- Hardcoded pixel values                                                                                                              | **Medium**   | - Use thread-safe collections<br>- Move magic numbers to config                                                                          |
+| **General Naming & Interfaces** | - Typos in method names and namespaces<br>- Inconsistent naming conventions                                                                                           | **Low**      | - Fix typos<br>- Standardize naming conventions                                                                                          |
 
-| File / Module                      | Issues Summary                                                                                       | Priority    | Recommendations Summary                                   |
-|----------------------------------|----------------------------------------------------------------------------------------------------|-------------|-----------------------------------------------------------|
-| **CaseController.cs**             | - `[Authorize]` commented out
-- No input validation
-- Async calls not awaited
-- Exception details exposed
-- Commented code present | Critical    | - Re-enable authorization
-- Add validation attributes
-- Properly await async
-- Return generic errors
-- Remove commented code |
-| **CaseRepository.cs**             | - Very large file (2191+ lines)
-- Static mutable user context
-- Mixed concerns
-- Missing cancellation tokens
-- Unsafe path handling
-- Missing XML docs | Critical    | - Refactor into smaller classes
-- Remove static state
-- Add cancellation support
-- Sanitize paths
-- Add XML docs           |
-| **AzureStorageService.cs**        | - Empty catch blocks
-- Improper logging levels
-- Process disposal missing
-- Nullable exception access | High        | - Log exceptions properly
-- Use correct log levels
-- Dispose processes properly
-- Use null checks for exceptions             |
-| **Program.cs**                   | - Hardcoded URLs
-- Overly permissive CORS
-- Duplicate SignalR & FormOptions config
-- JWT lifetime validation disabled | Critical    | - Move URLs to config
-- Restrict CORS origins
-- Remove duplicate config
-- Enable JWT lifetime validation                      |
-| **JwtMiddleware.cs**             | - Logger not injected
-- Missing null checks on claims                                            | High        | - Inject logger via constructor
-- Add null checks on claims                                                  |
-| **AppConfiguration.cs**          | - Manual config file loading
-- Hardcoded config path
-- Secrets stored insecurely              | High        | - Use `IOptions<T>` DI pattern
-- Remove manual loading
-- Secure secrets via environment or vault                          |
-| **CloudStorageFactory.cs**       | - Factory returns same implementation
-- Duplicate factory code                                    | Medium      | - Implement proper factory pattern
-- Consolidate factory class                                                  |
-| **PacsServerImage.cs**           | - Static mutable collections
-- Hardcoded pixel values                                            | Medium      | - Use thread-safe collections
-- Move magic numbers to config                                                 |
-| **General Naming and Interfaces**| - Typos in method names and namespaces
-- Inconsistent naming conventions                         | Low         | - Fix typos
-- Standardize naming conventions                                                                |
-
----
 
 ## Priority Summary Table
 
